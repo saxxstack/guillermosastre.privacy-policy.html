@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Política de Privacidad — Guillermo Sastre Fernández</title>
+  <meta name="description" content="Política de privacidad para la app que conecta con la API de Pinterest con fines de análisis interno de referencias de moda." />
+  <style>
+    :root{--bg:#0f1115;--card:#151821;--text:#e7e9ee;--muted:#aab1c3;--accent:#7aa2ff;}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
+    .wrap{max-width:900px;margin:40px auto;padding:24px}
+    .card{background:var(--card);border:1px solid #232836;border-radius:14px;padding:28px}
+    h1{margin:0 0 10px;font-size:28px;line-height:1.2}
+    h2{margin:28px 0 8px;font-size:20px}
+    p,li{color:var(--text)}
+    .muted{color:var(--muted)}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .meta{margin:6px 0 22px}
+    .list{padding-left:18px}
+    .tag{display:inline-block;background:#1c2233;border:1px solid #283149;color:#bcd0ff;padding:2px 8px;border-radius:999px;margin:4px 8px 0 0;font-size:12px}
+    footer{margin-top:28px;color:var(--muted);font-size:14px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Política de Privacidad — Guillermo Sastre Fernández</h1>
+      <div class="meta muted">Última actualización: <strong><!-- pon la fecha --> 5 nov 2025</strong></div>
+
+      <h2>Responsable</h2>
+      <p><strong>Guillermo Sastre Fernández</strong><br>
+        Correo de contacto: <a href="mailto:guillermosastrefernandez@gmail.com">guillermosastrefernandez@gmail.com</a>
+      </p>
+
+      <h2>Finalidad</h2>
+      <p>
+        Esta aplicación conecta con la API de Pinterest para <strong>leer</strong> pines y tableros de mi propia cuenta con el objetivo de
+        <strong>analizar referencias visuales</strong> (materiales, fornituras, acabados, colores, siluetas, texturas) y apoyar el
+        <strong>desarrollo de colecciones de moda</strong>. No publica contenido en Pinterest ni en otras plataformas.
+      </p>
+
+      <h2>Datos tratados</h2>
+      <ul class="list">
+        <li>Metadatos proporcionados por Pinterest: imágenes, descripciones, enlaces, IDs, relación con tableros/pines.</li>
+        <li>Información técnica mínima necesaria para la autenticación (token OAuth).</li>
+      </ul>
+
+      <h2>Base jurídica</h2>
+      <p>
+        Interés legítimo del responsable para investigación y desarrollo interno y/o consentimiento al autorizar el acceso mediante OAuth.
+      </p>
+
+      <h2>Permisos solicitados (scopes)</h2>
+      <p class="muted">Se limitan al mínimo necesario para lectura:</p>
+      <div>
+        <span class="tag">user_accounts:read</span>
+        <span class="tag">boards:read</span>
+        <span class="tag">pins:read</span>
+      </div>
+
+      <h2>Uso y conservación</h2>
+      <ul class="list">
+        <li>Los datos se usan exclusivamente para análisis interno de diseño.</li>
+        <li>No se venden, alquilan ni comparten con terceros.</li>
+        <li>No se almacenan imágenes o datos personales fuera de Pinterest, salvo <em>insights</em> agregados (paletas, nubes de etiquetas, resúmenes) que no contienen información personal identificable.</li>
+        <li>Los tokens se guardan de forma segura y se revocan cuando dejan de ser necesarios.</li>
+      </ul>
+
+      <h2>Terceros y transferencia</h2>
+      <p>
+        La app puede interactuar con asistentes GPT y herramientas internas de análisis para generar descripciones y clasificaciones a partir de los pines,
+        sin exponer credenciales ni contenidos privados. No hay cesiones comerciales de datos.
+      </p>
+
+      <h2>Seguridad</h2>
+      <ul class="list">
+        <li>Autenticación mediante OAuth de Pinterest.</li>
+        <li>Principio de mínimo privilegio (solo lectura).</li>
+        <li>Medidas razonables para proteger tokens y resultados agregados.</li>
+      </ul>
+
+      <h2>Derechos</h2>
+      <p>
+        Puedes solicitar acceso, rectificación o eliminación de datos agregados derivados del análisis escribiendo a
+        <a href="mailto:guillermosastrefernandez@gmail.com">guillermosastrefernandez@gmail.com</a>.
+        Para la información almacenada en Pinterest, utiliza las herramientas de privacidad de Pinterest.
+      </p>
+
+      <h2>Cambios en esta política</h2>
+      <p>
+        Esta política puede actualizarse. La versión vigente estará siempre publicada en esta URL.
+      </p>
+
+      <footer>
+        © <span id="year"></span> Guillermo Sastre Fernández — Todos los derechos reservados.
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    // año automático
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
